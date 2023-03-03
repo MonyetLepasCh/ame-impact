@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/top-bar.css" rel="stylesheet" />
+    <link href="css/game-bar.css" rel="stylesheet" />
+    <script>
+
+      function loadGame() {
+        document.getElementById('main-screen').style.display = 'none';
+        document.getElementById('game-screen').style.display = 'block';
+      }
+    </script>
+  </head>
+  <body onload="loadGame()">
+    <div id="main-screen">
+      <h1 style="text-align: center">LOADING....</h1>
+    </div>
+    <div id="game-screen">
+
+      <div id="wyvern-action">
+        <span><span id="wyvern-action-move">Dark Claw</span></span>
+      </div>
+
+      <img id="wyvern-char" class="character-in-game" src="assets/images/boss-dhika.png" />
+
+      <img id="kazuma-char" class="character-in-game" src="assets/images/monyet-anime.png" />
+      <img id="megumin-char" class="character-in-game" src="assets/images/nap-anime.png" />
+      <img id="aqua-char" class="character-in-game" src="assets/images/ray-anime.png" />
+
+      <img id="pow-sfx" class="sfx-image" src="assets/images/pow.png" height="100px" />
+      <img id="pow-sfx-2" class="sfx-image" src="assets/images/pow.png" height="100px" />
+      <img id="pow-sfx-3" class="sfx-image" src="assets/images/pow.png" height="100px" />
+
+      <h5 id="megumin-to-wyvern-damage" class="wyvern-damage">500</h5>
+      <h5 id="aqua-to-wyvern-damage" class="wyvern-damage">200</h5>
+      <h5 id="kazuma-to-wyvern-damage" class="wyvern-damage">100</h5>
+
+      <h5 id="to-megumin-damage" class="char-damage">500</h5>
+      <h5 id="to-aqua-damage" class="char-damage">500</h5>
+      <h5 id="to-kazuma-damage" class="char-damage">500</h5>
+
+      <div id="game-top-bar">
+
+        <div id="final-move"></div>
+
+        <div class="character-stat">
+          <img id="megumin-thumb" class="character-avatar" src="assets/images/nap-thumb.png">
+          <span>
+            <h4>NAPKING</h4>
+            <div id="megumin-hp-bar" class="hp-bar"></div>
+            <span>
+              <span id="megumin-hp"></span>
+              <span style="margin: 0 10px;">/</span>
+              <span id="megumin-max-hp"></span>
+            </span>
+          </span>
+        </div>
+        <div class="character-stat">
+          <img id="aqua-thumb" class="character-avatar" src="assets/images/ray-thumb.png">
+          <span>
+            <h4>RAY</h4>
+            <div id="aqua-hp-bar" class="hp-bar"></div>
+            <span>
+              <span id="aqua-hp"></span>
+              <span style="margin: 0 10px;">/</span>
+              <span id="aqua-max-hp"></span>
+            </span>
+          </span>
+        </div>
+        <div class="character-stat">
+          <img id="kazuma-thumb" class="character-avatar" src="assets/images/monyet-thumb.png">
+          <span>
+            <h4>MOLAS</h4>
+            <div id="kazuma-hp-bar" class="hp-bar"></div>
+            <span>
+              <span id="kazuma-hp"></span>
+              <span style="margin: 0 10px;">/</span>
+              <span id="kazuma-max-hp"></span>
+            </span>
+          </span>
+        </div>
+
+        <div class="boss-stat">
+          <span>
+            <h4>ANDHIKANUG</h4>
+            <div id="wyvern-hp-bar" class="boss-hp-bar"></div>
+            <span>
+              <span id="wyvern-hp"></span>
+              <span style="margin: 0 10px;">/</span>
+              <span id="wyvern-max-hp"></span>
+            </span>
+          </span>
+          <img class="character-avatar" src="assets/images/andhikanug-thumb-2.png" style="float: right;">
+        </div>
+
+        <div id="notification-window"></div>
+      </div>
+
+      <div id="game-menu-bar">
+        <div id="megumin-menu" class="menu-actions">
+          <h3>NAPKING</h3>
+          <button id="action-explosion">YATTA </button>
+          <button id="action-mega-blast">DAISUKI </button>
+          <button id="action-mana-recharge">Recharge (1x Pake)</button>
+        </div>
+
+        <div id="aqua-menu" class="menu-actions">
+          <h3>RAY</h3>
+          <button id="action-smack">AME </button>
+          <button id="action-heal">OHHH </button>
+          <button id="action-salvation">OOH (1 Time)</button>
+        </div>
+
+        <div id="aqua-menu" class="menu-actions">
+          <h3>MOLAS</h3>
+          <button id="action-stab">TUSUK </button>
+          <button id="action-steal">SELF HEAL</button>
+          <button id="action-dakunes-shield">Perisai Hutan (1 Time)</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="tutorial-screen">
+    </div>
+
+    <div id="win-screen">
+      <h1 style="text-align: center; font-size: 4em;">YOU WIN!</h1>
+      <button class="playButton" onclick="location.reload()">Play Again</button>
+    </div>
+
+    <div id="lose-screen">
+      <h1 style="text-align: center; font-size: 4em;">GAME OVER</h1>
+      <button class="playButton" onclick="location.reload()">Play Again</button>
+    </div>
+
+    <div id="tutorial-real-screen">
+      <div id="tutorial-scrollable">
+        <div style="text-align: center;">
+          <h1>SELAMAT DATANG DI: AME IMPACT</h1>
+          <h4>Made By : Monyet Lepas Ch. (Iya Ini Proyek kuliah jadul, Classnya belom gw rename gara2 males)</h4>
+          <img src="assets/images/Ame-Impact.png" width="300px;" style="margin: 20px;"/>
+          <p>
+            Kamu harus mengalahkan CEO GUGU GAGA <b>Andhikanug</b>
+            <br/>
+            <img src="assets/images/andhikanug-thumb.png" width="300px;" style="margin: 20px;"/>
+          </p>
+          <hr>
+        </div>
+        <p style="width: 100% !important;">
+          <img src="assets/images/nap-thumb.png" width="100px;" style="float: left; margin: 20px; border: 1px solid rgba(0,0,0, .3); border-radius: 20px;"/>
+
+          <img src="assets/images/ray-thumb.png" width="100px;" style="float: left; margin: 20px; border: 1px solid rgba(0,0,0, .3); border-radius: 20px;"/>
+
+          <img src="assets/images/monyet-thumb.png" width="100px;" style="float: left; margin: 20px; border: 1px solid rgba(0,0,0, .3); border-radius: 20px;"/>
+        </p>
+        <br/><br/><br/><br/><br/>
+        <p>
+          <h2>Anggota Party</h2>
+          <ul>
+            <li>
+              Napking: Hero Pemusnah Legenda, Manusia Ular 
+              <h4>Skills</h4>
+              <ul>
+                <li>Yatta: Gatau, Intinya Ngedamage</li>
+                <li>Daisuki: Sama Kaya Yatta, Tapi Lebih Sakit</li>
+                <li>Recharge: Mengembalikan Semua Cooldown</li>
+              </ul>
+              <br/>
+            </li>
+            <li>
+              Ray: CEO AME.ID Yang Gatau Perusahaanya Berkembang
+              <h4>Skills</h4>
+              <ul>
+                <li>Ame: Teriak Ame Sampe Musuh Kena Demeg</li>
+                <li>Ametukam: Ngeheal + Revive </li>
+                <li>Ooh: Ngeheal Full</li>
+              </ul>
+              <br/>
+            </li>
+            <li>
+              Bang Monyet, Yang Bikin Game wkwkw
+              <h4>Skills</h4>
+              <ul>
+                <li>Tusuk: Nyerang Musuh</li>
+                <li>Self Heal: Ngasih Damage Ke Musuh Sekalian Heal Sendiri.</li>
+                <li>Perisai Hutan: Semua Anggota Party Kebal 10 Detik</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <h2>Andhikanug</h2>
+          <ul>
+            <li>ACCLK 1: Damage Ke 1 Orang</li>
+            <li>ACCLK 2: Damage Tinggi Ke 1 Orang</li>
+            <li>ACCLK 3: Ngedamage Semua Orang dan block damage melee dari player</li>
+            <li>ACCLK 4: Ulti bang dhika, semua orang kena damage tinggi</li>
+          </ul>
+          <br/>
+          </p>
+
+        <button id="play-game" class="playButton">Start</button>
+      </div>
+    </div>
+
+    <audio id="intro-bgm" autoplay loop>
+      <source src="assets/sounds/Genshin-Theme.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="lose-bgm" loop>
+      <source src="assets/sounds/vierra-tapi.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="win-bgm" loop>
+      <source src="assets/sounds/gyutto-tapi.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="battle-bgm"  loop>
+      <source src="assets/sounds/overdose-tapi.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="hit-sound">
+      <source src="assets/sounds/ame.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="explode-sound">
+      <source src="assets/sounds/explode-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="explosion-sound">
+      <source src="assets/sounds/yatta.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="heal-sound">
+      <source src="assets/sounds/oh.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="buff-sound">
+      <source src="assets/sounds/heal-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="bomb-sound">
+      <source src="assets/sounds/daisuki.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="roar-sound">
+      <source src="assets/sounds/ACCLK1.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="stab-sound">
+      <source src="assets/sounds/stab-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="js/config.js"></script>
+    <script src="js/states.js"></script>
+    <script src="js/actions.js"></script>
+  </body>
+</html>

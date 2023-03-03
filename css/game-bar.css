@@ -1,0 +1,186 @@
+#game-menu-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: rgba(0,0,0, 1);
+  padding-top: 3px;
+}
+
+.character-in-game {
+  position: fixed;
+  bottom: 0px;
+  height: 380px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+
+.character-in-game:hover {
+  position: fixed;
+  bottom: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+
+#kazuma-char {
+  left: 570px;
+}
+
+#megumin-char {
+  left: 70px;
+}
+
+#aqua-char {
+  left: 310px;
+}
+
+#dakunes-char {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+}
+
+#wyvern-action {
+  position: fixed;
+  right: 10%;
+  top: 140px;
+  background: rgba(0,0,0, .8);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 2em;
+  width: 300px;
+  text-align: center;
+}
+
+#wyvern-action span {
+}
+
+#wyvern-char {
+  right: 5%;
+  bottom: 100px;
+  zoom: 0.9;
+}
+
+#pow-sfx {
+  position: fixed;
+  display: none;
+  right: 13%;
+  bottom: 200px;
+}
+
+#pow-sfx-2 {
+  position: fixed;
+  display: none;
+  right: 10%;
+  bottom: 300px;
+}
+
+#pow-sfx-3 {
+  position: fixed;
+  display: none;
+  right: 20%;
+  bottom: 200px;
+}
+
+#final-move {
+  display: none;
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  height: 250px;
+  background: url('../assets/images/final-move.jpg');
+  background-size: cover;
+  background-position: 10% 40%;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.menu-actions {
+  width: 250px;
+  height: 100%;
+  float: left;
+  margin: 0 5px;
+}
+
+.menu-actions h3 {
+  margin-top: -40px;
+  color: white;
+  background: rgba(0,0,0, .5);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 5px;
+  border-top-right-radius: 20px;
+}
+
+.menu-actions button {
+  margin: 3px 10px;
+  width: 100%;
+  background: #446CB3;
+  color: #fff;
+  font-size: 1em;
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-actions button:hover {
+  background: #3A539B;
+}
+
+.menu-actions button:disabled {
+  background: #444;
+}
+
+.action-run-out {
+  background: #444 !important;
+}
+
+.wyvern-damage{
+  display: none;
+  position: fixed;
+  top: 250px;
+  font-size: 3em;
+  color: white;
+  right: 200;
+  opacity: 0.9;
+}
+
+#megumin-to-wyvern-damage {
+  top: 200px;
+}
+
+#aqua-to-wyvern-damage {
+  top: 250px;
+}
+
+#kazuma-to-wyvern-damage {
+  top: 300px;
+}
+
+.char-damage{
+  display: none;
+  position: fixed;
+  bottom: 320px;
+  font-size: 2em;
+  color: white;
+}
+
+#to-megumin-damage {
+  left: 120;
+}
+
+#to-aqua-damage {
+  left: 390;
+}
+
+#to-kazuma-damage {
+  left: 620;
+}
