@@ -110,14 +110,14 @@
           <h3>RAY</h3>
           <button id="action-smack">AME </button>
           <button id="action-heal">OHHH </button>
-          <button id="action-salvation">OOH (1 Time)</button>
+          <button id="action-salvation">OOH (1x Pake)</button>
         </div>
 
         <div id="aqua-menu" class="menu-actions">
           <h3>MOLAS</h3>
           <button id="action-stab">TUSUK </button>
           <button id="action-steal">SELF HEAL</button>
-          <button id="action-dakunes-shield">Perisai Hutan (1 Time)</button>
+          <button id="action-dakunes-shield">Perisai Hutan (1x Pake)</button>
         </div>
       </div>
     </div>
@@ -126,14 +126,16 @@
     <div id="tutorial-screen">
     </div>
 
-    <div id="win-screen">
+    <div style="text-align: center;" id="win-screen">
       <h1 style="text-align: center; font-size: 4em;">YOU WIN!</h1>
-      <button class="playButton" onclick="location.reload()">Play Again</button>
+      <img src="assets/images/ray-thumb.png" width="100px;" style="float: left; margin: 20px; border: 1px solid rgba(0,0,0, .3); border-radius: 20px;"/>
+      <button class="playButton" onclick="location.reload()">Main Lagi</button>
     </div>
 
-    <div id="lose-screen">
-      <h1 style="text-align: center; font-size: 4em;">GAME OVER</h1>
-      <button class="playButton" onclick="location.reload()">Play Again</button>
+    <div style="text-align: center;" id="lose-screen">
+      <h1 style="text-align: center; font-size: 4em;">DIH CUPU</h1>
+      <img src="assets/images/andhikanug-thumb.png" width="300px;" style="margin: 20px;"/>
+      <button class="playButton" onclick="location.reload()">Coba Lagi</button>
     </div>
 
     <div id="tutorial-real-screen">
@@ -195,10 +197,10 @@
         <p>
           <h2>Andhikanug</h2>
           <ul>
-            <li>ACCLK 1: Damage Ke 1 Orang</li>
-            <li>ACCLK 2: Damage Tinggi Ke 1 Orang</li>
-            <li>ACCLK 3: Ngedamage Semua Orang dan block damage melee dari player</li>
-            <li>ACCLK 4: Ulti bang dhika, semua orang kena damage tinggi</li>
+            <li>ACCLK (Normal Atk): Damage Ke 1 Orang</li>
+            <li>ACCLK (Max Atk): Damage Tinggi Ke 1 Orang</li>
+            <li>ACCLK (Debuff Atk): Ngedamage Semua Orang dan block (Disable) serangan dari player</li>
+            <li>ACCLK (Ultimate): Ulti bang dhika, semua orang kena damage tinggi</li>
           </ul>
           <br/>
           </p>

@@ -16,10 +16,10 @@ var wyvernObj = {
     ancientHellfire: damageConfig.wyvern.ancientHellfire,
   },
   actionMove: {
-    darkClaw: 'ACCLK 1',
-    wingFlap: 'ACCLK 2',
-    blackMiasma: 'ACCLK 3',
-    ancientHellfire: 'ACCLK 4',
+    darkClaw: 'ACCLK (Normal Atk)',
+    wingFlap: 'ACCLK (Max Atk)',
+    blackMiasma: 'ACCLK (Debuff Atk)',
+    ancientHellfire: 'ACCLK(Ultimate)',
   },
   dealDamage: function(damage) {
     // amount of damage inflicted
